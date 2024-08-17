@@ -61,7 +61,6 @@ for i = 1:42
     kopplungsgruppen{i} = eval(['kopplungsgruppe' num2str(i)]);
 end
 
-
 informativeness = zeros(length(afrika),7);
 informativeness(:,1) = afrika;
 informativeness(:,2) = amerika;
@@ -89,8 +88,3 @@ x = MLIP_deltas(delta,q,n,m,zweiergruppen,marker_namen,kopplungsgruppen);
 
 % In rare cases, solutions are not exactly 0 or 1, but deviate slightly from 1. Therefore, include the following line
 sol = marker_namen(abs(x-1)<0.01);
-
-
-    
-
-
