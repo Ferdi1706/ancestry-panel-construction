@@ -1,5 +1,5 @@
 % Implementation of the optimization problem using intlinprog()
-function x = MLIP_deltas(delta,q,n,m,zweiergruppen,marker_namen,kopplungsgruppen) 
+function x = MILP_deltas(delta,q,n,m,zweiergruppen,marker_namen,kopplungsgruppen) 
 c = delta(:,1);
 for i = 2:length(delta(1,:))
     c = c + delta(:,i);
