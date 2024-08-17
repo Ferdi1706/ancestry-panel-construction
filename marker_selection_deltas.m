@@ -84,7 +84,7 @@ end
 
 % set parameters, we want to select 96 markerks
 n = length(marker_namen); m = 96; q = 1; 
-x = MLIP_deltas(delta,q,n,m,zweiergruppen,marker_namen,kopplungsgruppen);
+x = MILP_deltas(delta,q,n,m,zweiergruppen,marker_namen,kopplungsgruppen);
 
 
 % In rare cases, solutions are not exactly 0 or 1, but deviate slightly from 1. Therefore, include the following line
