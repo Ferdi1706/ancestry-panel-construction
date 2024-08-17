@@ -44,5 +44,6 @@ while(k<=length(zweiergruppen))
     n_rows = n_rows + 1;
 end
 
+% now find optimal marker combination using intlinprog()
 x = intlinprog(c, intcon, A, b, Aeq, beq, lb, ub);
 end
